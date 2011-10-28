@@ -26,7 +26,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>readers</name>
-    <url>https://github.com/langmi/spring-batch-templates</url>
+    <url>https://github.com/langmi/spring-batch-examples</url>
     <description>Spring Batch Example: (item) reader examples</description>
 
     <licenses>
