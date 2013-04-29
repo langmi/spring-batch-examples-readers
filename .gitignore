@@ -1,0 +1,8 @@
+# Texteditor history files
+*~
+# Mac
+.DS_Store
+# eclipse IDE
+.settings
+# maven build output
+target
