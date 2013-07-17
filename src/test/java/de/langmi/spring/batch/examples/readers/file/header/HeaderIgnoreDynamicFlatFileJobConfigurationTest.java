@@ -59,7 +59,7 @@ public class HeaderIgnoreDynamicFlatFileJobConfigurationTest {
         jobParametersMap.put("time", new JobParameter(System.currentTimeMillis()));
         jobParametersMap.put("linesToSkip", new JobParameter("1"));
         jobParametersMap.put("input.file", new JobParameter("file:src/test/resources/input/file/header/input.txt"));
-        jobParametersMap.put("output.file", new JobParameter("file:target/test-outputs/readers/file/header-ignore/output.txt"));
+        jobParametersMap.put("output.file", new JobParameter("file:target/test-outputs/readers/file/header-ignore-dynamic/output.txt"));
 
         // launch the job
         JobExecution jobExecution = jobLauncherTestUtils.launchJob(new JobParameters(jobParametersMap));
