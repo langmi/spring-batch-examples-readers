@@ -22,11 +22,13 @@
 
     <description>Job database setup.</description>
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
-        <property name="driverClassName" value="org.hsqldb.jdbcDriver" />
-        <property name="url" value="jdbc:hsqldb:mem:testdb" />
-        <property name="username" value="sa" />
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="org.hsqldb.jdbcDriver" />
+        <property name="jdbcUrl" value="jdbc:hsqldb:mem:testdb" />
+        <property name="user" value="sa" />
         <property name="password" value="" />
+        <property name="minPoolSize" value="5" />
+        <property name="maxPoolSize" value="10" />
     </bean>
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
